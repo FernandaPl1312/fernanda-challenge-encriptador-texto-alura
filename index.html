@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Encriptador challenge</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./imagenes/logo.png">
+    </header>
+    <main> 
+        <section class="seccion1">
+            <textarea class="text-area" cols="40" rows="10" placeholder="ingrese el texto aqui"></textarea>
+        <div>
+            <h1 class="informacion">Solo letras minúsculas y sin acentos</h1>
+        </div>
+        <div class="botones">
+            <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+            <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+        </div>
+        </section>
+        <section class="seccion2"> 
+            <img class="muneco" style="display: block;" src="./imagenes/muneco.png">
+         <textarea class="mensaje" cols="20" rows="10"></textarea>
+         <div class="contenedor-mensaje">
+            <a style="font-size:25px;">Ningún mensaje fue<br>encontrado</a>
+            <p style="font-size: 18px;">Ingrese el texto que desees encriptar o<br>desencriptar</p>
+            </div>
+            <div class="contenedor-resultado">
+                <h2 class="texto-resultado"></h2>
+            </div>
+        </section> 
+    </main>
+    <script src="/script.js"></script>
+</body>
+</html>
